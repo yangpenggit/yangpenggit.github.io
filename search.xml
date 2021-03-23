@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Linux命令</title>
+      <link href="2021/03/23/linux-chang-yong-ming-ling/"/>
+      <url>2021/03/23/linux-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><pre class=" language-bash"><code class="language-bash">$ ctrl + l  </code></pre><h3 id="查看实时日志"><a href="#查看实时日志" class="headerlink" title="查看实时日志"></a>查看实时日志</h3><pre class=" language-bash"><code class="language-bash">$  <span class="token function">tail</span> -f xxxx.log      实时监控日志 </code></pre><h3 id="查看IP"><a href="#查看IP" class="headerlink" title="查看IP"></a>查看IP</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">ifconfig</span></code></pre><p>如果提示命令不存在则需要安装网络工具</p><pre class=" language-bash"><code class="language-bash">$ yum <span class="token function">install</span> net-tools -y</code></pre><p>如果ifconfig不能显示ipv4地址则使用该命令</p><pre class=" language-bash"><code class="language-bash">$ ip addr</code></pre><h3 id="查看端口号使用情况"><a href="#查看端口号使用情况" class="headerlink" title="查看端口号使用情况"></a>查看端口号使用情况</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">netstat</span> -tunlp <span class="token operator">|</span> <span class="token function">grep</span> xxxx$ <span class="token function">lsof</span> i:xxxx</code></pre><p>最后面的xxxx为端口号</p><h3 id="杀死进程"><a href="#杀死进程" class="headerlink" title="杀死进程"></a>杀死进程</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">kill</span> -9 pid</code></pre><p>pid为进程的pid</p><h3 id="解压压缩包"><a href="#解压压缩包" class="headerlink" title="解压压缩包"></a>解压压缩包</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">tar</span> –xvzf xxxxxx.tar.gz</code></pre><p>参数说明<br>-c 创建.tar格式的文bai件du<br>-x 解开.tar格式的文件<br>-f 使用归档文件<br>-v 显示详细zhi信息<br>-t 查看包内文件<br>-j 使用baip2程序<br>-z 使用gzip程序<br>-p 打包时保dao留文件及目录的权限<br>-P 打包时保留文件及目录的绝对路径<br>-C 释放的目的地</p><h3 id="进入到某个目录"><a href="#进入到某个目录" class="headerlink" title="进入到某个目录"></a>进入到某个目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> 目录名</code></pre><h3 id="回到上一级目录"><a href="#回到上一级目录" class="headerlink" title="回到上一级目录"></a>回到上一级目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> <span class="token punctuation">..</span></code></pre><h3 id="回到根目录"><a href="#回到根目录" class="headerlink" title="回到根目录"></a>回到根目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> /</code></pre><h3 id="切换到home目录"><a href="#切换到home目录" class="headerlink" title="切换到home目录"></a>切换到home目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> ~ </code></pre><h3 id="切换到上次访问的目录"><a href="#切换到上次访问的目录" class="headerlink" title="切换到上次访问的目录"></a>切换到上次访问的目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">cd</span> -      </code></pre><h2 id="系统操作"><a href="#系统操作" class="headerlink" title="系统操作"></a>系统操作</h2><h3 id="获取最高权限"><a href="#获取最高权限" class="headerlink" title="获取最高权限"></a>获取最高权限</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">sudo</span> <span class="token function">su</span></code></pre><h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">reboot</span></code></pre><h3 id="关机"><a href="#关机" class="headerlink" title="关机"></a>关机</h3><pre class=" language-bash"><code class="language-bash">$ halt</code></pre><h3 id="立刻关机"><a href="#立刻关机" class="headerlink" title="立刻关机"></a>立刻关机</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">shutdown</span> -h now</code></pre><h3 id="10分钟后自动关机"><a href="#10分钟后自动关机" class="headerlink" title="10分钟后自动关机"></a>10分钟后自动关机</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">shutdown</span> -h 10</code></pre><h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><h3 id="查看当前目录"><a href="#查看当前目录" class="headerlink" title="查看当前目录"></a>查看当前目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">pwd</span></code></pre><h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">mkdir</span> 目录名称</code></pre><h3 id="创建多级目录"><a href="#创建多级目录" class="headerlink" title="创建多级目录"></a>创建多级目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">mkdir</span> -p 目录名称</code></pre><p>例: 在 /usr/local/abcd/efg下创建hijk目录,每一个层级,如果有一层不存在则会创建</p><h3 id="删除目录"><a href="#删除目录" class="headerlink" title="删除目录"></a>删除目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">rm</span> -rf 目录名称</code></pre><h3 id="移动目录"><a href="#移动目录" class="headerlink" title="移动目录"></a>移动目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">mv</span> 源目录路径 目标目录路径</code></pre><p>Tips: 在相同的目录下则是修改名称</p><h3 id="复制目录"><a href="#复制目录" class="headerlink" title="复制目录"></a>复制目录</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">cp</span> 源目录路径 目标目录路径</code></pre><h3 id="搜索目录【查】"><a href="#搜索目录【查】" class="headerlink" title="搜索目录【查】"></a>搜索目录【查】</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">find</span> 目录 参数 文件名称</code></pre><p>示例：find /usr/tmp -name ‘a*’    查找/usr/tmp目录下的所有以a开头的目录或文件</p><h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><h3 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件"></a>创建文件</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">touch</span> 文件名称</code></pre><h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">rm</span> 文件名称</code></pre><h3 id="移动文件"><a href="#移动文件" class="headerlink" title="移动文件"></a>移动文件</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">mv</span> 文件名称 目标位置</code></pre><p>Tips: 在相同的目录下则是修改名称</p><h3 id="复制文件"><a href="#复制文件" class="headerlink" title="复制文件"></a>复制文件</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">cp</span> 文件名 目标位置</code></pre><h3 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h3><pre class=" language-bash"><code class="language-bash">$ vim 文件名</code></pre><p>如果提示vim不存在则安装</p><pre class=" language-bash"><code class="language-bash">$ yum <span class="token function">install</span> vim* -y</code></pre><p>左下角没有Insert或插入按i键,有直接编辑</p><p>编辑完后可以使用以下命令:</p><p>:wq保存并强制退出<br>:wq filename 以filename为文件名保存后强制退出；<br>:w保存<br>:w fileName 另存为fileName<br>:q 强制退出<br>:x 保存并退出（仅当文件有变化时保存）<br>u 撤回</p><h3 id="打开图片"><a href="#打开图片" class="headerlink" title="打开图片"></a>打开图片</h3><pre class=" language-bash"><code class="language-bash">$ eog<span class="token punctuation">(</span>eye of gmone，是linux下内置的图片查看器<span class="token punctuation">)</span> 图片名.后缀</code></pre><h2 id="安全操作"><a href="#安全操作" class="headerlink" title="安全操作"></a>安全操作</h2><h3 id="查看开放的端口号"><a href="#查看开放的端口号" class="headerlink" title="查看开放的端口号"></a>查看开放的端口号</h3><pre class=" language-bash"><code class="language-bash">$ firewall-cmd --list-ports</code></pre><h3 id="开放端口号"><a href="#开放端口号" class="headerlink" title="开放端口号"></a>开放端口号</h3><pre class=" language-bash"><code class="language-bash">$ firewall-cmd --zone<span class="token operator">=</span>public --add-port<span class="token operator">=</span>xxx/tcp --permanent</code></pre><p>其中 –add-port=xxx, xxx为端口号</p><h3 id="重启防火墙"><a href="#重启防火墙" class="headerlink" title="重启防火墙"></a>重启防火墙</h3><p>开放端口号后需要重启防火墙</p><pre class=" language-bash"><code class="language-bash">$ firewall-cmd --reload</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2021/03/21/hello-world/"/>
+      <url>2021/03/21/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

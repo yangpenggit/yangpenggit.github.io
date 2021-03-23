@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>时光飞逝i</title>
+  
+  <subtitle>东京物语</subtitle>
+  <link href="https://yangpenggit.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://yangpenggit.github.io/"/>
+  <updated>2021-03-23T08:55:24.624Z</updated>
+  <id>https://yangpenggit.github.io/</id>
+  
+  <author>
+    <name>小白</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux命令</title>
+    <link href="https://yangpenggit.github.io/2021/03/23/linux-chang-yong-ming-ling/"/>
+    <id>https://yangpenggit.github.io/2021/03/23/linux-chang-yong-ming-ling/</id>
+    <published>2021-03-23T01:25:00.000Z</published>
+    <updated>2021-03-23T08:55:24.624Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h2&gt;&lt;h3 id=&quot;清屏&quot;&gt;&lt;a href=&quot;#清屏&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://yangpenggit.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://yangpenggit.github.io/tags/Linux/"/>
+    
+    <category term="命令" scheme="https://yangpenggit.github.io/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://yangpenggit.github.io/2021/03/21/hello-world/"/>
+    <id>https://yangpenggit.github.io/2021/03/21/hello-world/</id>
+    <published>2021-03-21T09:04:27.995Z</published>
+    <updated>2021-03-23T09:02:26.782Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo" scheme="https://yangpenggit.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
