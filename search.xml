@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>SpringBoot框架搭建</title>
+      <link href="2021/03/23/idea-chuang-jian-springboot-xiang-mu/"/>
+      <url>2021/03/23/idea-chuang-jian-springboot-xiang-mu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><h3 id="IDEA2020-1、JDK1-8"><a href="#IDEA2020-1、JDK1-8" class="headerlink" title="IDEA2020.1、JDK1.8"></a>IDEA2020.1、JDK1.8</h3><h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><h3 id="新建一个项目"><a href="#新建一个项目" class="headerlink" title="新建一个项目"></a>新建一个项目</h3><p><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/1.png" alt="1"></p><p>选择SPRING Initializr，Project SDK可能需要选一下，选自己用的JDK就好了</p><p><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/2.png" alt="2"></p><p>点击Next后就到了选择依赖步骤<br><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/3.png" alt="3"></p><p>我们选中左边框框的Web，然后再点上右边Web的框框<br><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/4.png" alt="4"></p><p>点击Next后就到了选择保存项目路径的步骤<br><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/5.png" alt="5"></p><p>新建项目后就出现这样一个结构<br>SpringbootApplication是springboot的启动类<br>把application.properties改成application.yml<br><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/7.png" alt="7"></p><p>application.yml配置<br><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/8.png" alt="8"></p><p>在TestController类上添加注解@RestController<br>这个注解是@ResponseBody与@Controller两个注解的合体版<br>作用是在每个方法上面增加@ResponseBody注解<br><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/9.png" alt="9"></p><p>浏览器访问 ip:端口/test<br><img src="/images/IDEA%E5%88%9B%E5%BB%BASpringBoot%E9%A1%B9%E7%9B%AE/10.png" alt="10"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> SpringBoot </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> IDEA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux命令</title>
       <link href="2021/03/23/linux-chang-yong-ming-ling/"/>
       <url>2021/03/23/linux-chang-yong-ming-ling/</url>
